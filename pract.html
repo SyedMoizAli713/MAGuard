@@ -4,12 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guarder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/pract.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
+    <nav class="navbar navbar-dark bg-transparent navbar-expand-lg px-3 py-1 fixed-top">
+        <div class="container-fluid position-relative d-flex justify-content-between align-items-center">
+            <a class="navbar-brand text-white fw-bold d-flex align-items-center me-auto me-lg-0" href="#"><h4>Guarder</h4><span class="text-warning">.</span></a>
+            <button class="btn btn-outline-warning text-white d-lg-none d-block" type="button" onclick="location.href='#get'">Get Started</button>
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-warning" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#About">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#Guards">Guards</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#Contact">Contact US</a></li>
+                </ul>
+            </div>
+            <button class="btn btn-outline-warning text-white  d-lg-block d-none position-absolute end-0 me-4" type="button" onclick="location.href='#get'">Get Started</button>
+        </div>
+    </nav>
     <header>
-        <nav>
+        <!-- <nav>
             <h1>Guarder</h1>
             <ul>
                 <li><a href="">HOME</a></li>
@@ -18,8 +38,8 @@
                 <li><a href="">GUARDS</a></li>
                 <li><a href="">CONTACT US</a></li>
             </ul>
-        </nav>
-        <div class="text">
+        </nav> -->
+        <div class="text" id="home">
         <h1>YOUR SAFTEY <br><span>OUR RESPONSIBILITY</span></h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Nobis aperiam repellat vitae optio. Inventore culpa reiciendis nobis.</p>
         <button class="btn1">Read more</button>
@@ -27,14 +47,14 @@
     </div>
     </header>
     <section>
-        <div class="about-us">
+        <div class="about-us" id="About">
             <div class="pic"></div>
             <div class="about"> <h1>WHO ARE WE?</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolorin reprehenderit in voluptate velit</p>
         <button class="btn3">Read more</button>
         </div>
     </div>
-    <div class="services">
+    <div class="services" id="services">
         <h1>OUR SERVICES</h1>
         <div class="main-box">
         <div class="box"><img src="images/s1.svg" alt=""><br><br>
@@ -60,7 +80,7 @@
         <h3>Minim Veniam</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <br> magnaaliqua. Ut enim ad minim veniam, quis nostrud exercitationullamco laboris nisi ut aliquip</p>
     </div>
-    <div class="form">
+    <div class="form" id="get">
         <h1>GET IN TOUCH</h1>
         <form action="">
             <input type="text" placeholder="FULL NAME" required>
@@ -70,7 +90,7 @@
             <button class="b"><b>Send</b></button>
         </form>
     </div>
-    <div class="our-guards">
+    <div class="our-guards" id="Guards">
         <h1>OUR GUARDS</h1>
         <p>Lorem ipsum dolor sit amet, non odio tincidunt ut ante, lorem a euismod suspendisse vel, sed quam nulla mauris iaculis. Erat eget vitae malesuada,<br> tortor tincidunt porta lorem lectus.</p>
         <div class="square-main">
@@ -84,7 +104,7 @@
         </div>
     </section>
     <footer>
-        <div class="footer">
+        <div class="footer" id="Contact">
             <div class="head">
                 <h1>Guarder</h1>
                 <p>dolor sit amet, consectetur <br> magna aliqua. Ut enim ad <br> minim veniam, quisdotempor <br>  incididunt r</p>
@@ -109,8 +129,9 @@
                 </div>
         </div>
         <div class="design">
-            <p>© 2025 All Rights Reserved. By HTML CSS Template Compitition</p>
+            <p>© 2025 All Rights Reserved. Created Template By Syed Moiz Ali.</p>
         </div>
      </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
