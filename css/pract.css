@@ -8,7 +8,13 @@ header{
     background-size: cover;
     /* height: 600px; */
 }
-nav{
+.bg-transparent {
+    background: rgba(14, 13, 13, 0.63) !important; 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,7 +34,7 @@ nav ul li a{
     text-decoration: none;
     color: white;
     font-family: sans-serif;
-}
+} */
 .text{
     padding: 60px;
 }
@@ -81,9 +87,12 @@ nav ul li a{
     background: transparent;
     border: 1px solid #F1DB25;
 }
-nav ul li a:hover{
+/* nav ul li a:hover{
     background-color: #1C1C1C;
     padding: 10px;
+} */
+.navbar-nav li a:hover{
+    color: #FFC107 !important;
 }
 .about-us{
     display: flex;
@@ -221,7 +230,7 @@ nav ul li a:hover{
     background-color: #F1DB25;
     color: #FFFFFF;
     transition: 0.5s;
-    width: 10%;
+    width: 12%;
     padding: 10px;
     border: none;
 }
@@ -284,8 +293,7 @@ nav ul li a:hover{
     background-color: #F1DB25;
     color: #FFFFFF;
     transition: 0.5s;
-    padding: 20px;
-    width: 12%;
+    padding: 10px 20px;
     border: none;
 }
 .btn .b:hover{
@@ -449,7 +457,7 @@ input{
     }
 
     .form .b {
-        width: 50%;
+        width: 30%;
     }
 
     .footer {
@@ -498,7 +506,7 @@ input{
     }
 
     .form .b {
-        width: 60%;
+        width: 30%;
     }
 
     .footer {
